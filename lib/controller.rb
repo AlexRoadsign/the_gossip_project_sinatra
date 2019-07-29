@@ -20,4 +20,10 @@ class ApplicationController < Sinatra::Base
   	"Voici le Gossip que tu cherches: #{params["id"]}!"
   	end
 
+  	get '/gossips/show/:id' do
+  	gossip_id = params['id']
+  	end      
+  		
+  
+
 end

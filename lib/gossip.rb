@@ -21,5 +21,10 @@ attr_accessor :author, :content
   	return all_gossips
 	end
 
+	def self.find(id)
+		gossip_array = Gossip.all
+		return gossip_array[id.to_i]
+	end
+
 end
 
